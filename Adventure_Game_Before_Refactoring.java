@@ -29,7 +29,7 @@ public class Adventure_Game_Before_Refactoring {
             if (choice == 1) {
                 int damage = r.nextInt(6) + 1;
                 System.out.println("You attack the " + monster + " for " + damage + " damage!");
-                monsterHealth -= damage;
+                monsterHealth -= damage ;
                 if (monsterHealth <= 0) {
                     System.out.println("You defeated the " + monster + "!");
                     break;
