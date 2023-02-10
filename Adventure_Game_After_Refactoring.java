@@ -23,7 +23,7 @@ public class Adventure_Game_After_Refactoring {
 	                printf("You attack the %s for %d damage!\n", monster, damage);
 	                monsterHealth -= damage ;
 	                if (monsterHealth <= 0) {
-	                    System.out.println("You defeated the " + monster + "!");
+	                    printf("You defeated the %s!", monster);
 	                    break;
 	                }
 	                damage = r.nextInt(6) + 1;
