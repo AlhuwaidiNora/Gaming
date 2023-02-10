@@ -35,5 +35,5 @@ public class Adventure_Game_After_Refactoring {
 	                int itemChoice = Integer.parseInt(sc.nextLine());
 	                System.out.println("You used the " + items[itemChoice - 1] + ".");
 	            } else if (choice == 3) {
-	            	printf("You fled from the %s.\n", monster);
+	            	System.out.printf("You fled from the %s.\n", monster);
 	                break;}}}}
