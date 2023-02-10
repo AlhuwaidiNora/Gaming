@@ -17,17 +17,17 @@ public class Adventure_Game_After_Refactoring {
 	            int choice = Integer.parseInt(sc.nextLine());
 	           if (choice == 1) {
 	                int damage = r.nextInt(6) + 1;
-	                printf("You attack the %s for %d damage!\n", monster, damage);
+	                System.out.printf("You attack the %s for %d damage!\n", monster, damage);
 	                monsterHealth -= damage ;
 	                if (monsterHealth <= 0) {
-	                    printf("You defeated the %s!", monster);
+	                    System.out.printf("You defeated the %s!", monster);
 	                    break;
 	                }
 	                damage = r.nextInt(6) + 1;
-	                printf("The %s attacks you for %d damage!\n", monster, damage);
+	                System.out.printf("The %s attacks you for %d damage!\n", monster, damage);
 	                playerHealth -= damage;
 	                if (playerHealth <= 0) {
-	                	printf("You were defeated by the %s.\n", monster);
+	                	System.out.printf("You were defeated by the %s.\n", monster);
 	                    break;
 	                }
 	            } else if (choice == 2) {
