@@ -1,11 +1,8 @@
 package Adventure_Game;
-
 import java.util.Random;
 import java.util.Scanner;
-
 public class Adventure_Game_After_Refactoring {
 	public class Adventure_Game_After_Refactoring {
-
 	    public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 	        Random r = new Random();
@@ -31,7 +28,6 @@ public class Adventure_Game_After_Refactoring {
 	                playerHealth -= damage;
 	                if (playerHealth <= 0) {
 	                	printf("You were defeated by the %s.\n", monster);
-
 	                    break;
 	                }
 	            } else if (choice == 2) {
@@ -40,10 +36,4 @@ public class Adventure_Game_After_Refactoring {
 	                System.out.println("You used the " + items[itemChoice - 1] + ".");
 	            } else if (choice == 3) {
 	            	printf("You fled from the %s.\n", monster);
-
-
-	                break;
-	            }
-	        }
-	    }
-	}
+	                break;}}}}
