@@ -33,7 +33,7 @@ public class Adventure_Game_After_Refactoring {
 	            } else if (choice == 2) {
 	               System.out.printf("Which item would you like to use?\n1. sword\n2. shield\n3. health potion\nEnter your choice: ");
 	                int itemChoice = Integer.parseInt(sc.nextLine());
-	                System.out.println("You used the " + items[itemChoice - 1] + ".");
+	                System.out.printf("You used the %s.", items[itemChoice - 1]);
 	            } else if (choice == 3) {
 	            	System.out.printf("You fled from the %s.\n", monster);
 	                break;}}}}
