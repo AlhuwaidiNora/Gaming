@@ -1,36 +1,68 @@
 # Gaming
-//Smelly Style: own version
+-- Smelly Style: own version-- 
+
 import java.util.Random;
+
 import java.util.Scanner;
+
 public class Adventure_Game {
+
    public static void main(String[] args) {
+ 
+   
       int playerHealth = 20;
+      
       Scanner sc = new Scanner(System.in);
+      
       Random r = new Random();
+      
       String[] items = {"sword", "shield", "health potion"};
+      
       String[] monsters = {"orc", "goblin", "dragon"};
+      
       while (true) {
+      
          int monsterHealth = 11 + r.nextInt(10);
+	 
          String monster = monsters[r.nextInt(3)];
+	 
          System.out.println("A " + monster + " appeared! Your turn! You have " + playerHealth + " health. The " + monster + " has " + monsterHealth + " health. What would you like to do?");
+	 
          System.out.println("1. Attack");
+	 
          System.out.println("2. Use item");
+	 
          System.out.println("3. Flee");
+	 
          System.out.print("Enter your choice: ");
+	 
          int choice = Integer.parseInt(sc.nextLine());
+	 
          if (choice == 1) {
+	 
             int damage = 1 + r.nextInt(6);
+	    
             System.out.println("You attack the " + monster + " for " + damage + " damage!");
+	    
             monsterHealth -= damage;
+	    
             if (monsterHealth <= 0) {
+	    
                System.out.println("You defeated the " + monster + "!");
+	       
                return;
             }
+	    
             damage = 1 + r.nextInt(6);
+	    
             System.out.println("The " + monster + " attacks you for " + damage + " damage!");
+	    
             playerHealth -= damage;
+	    
             if (playerHealth <= 0) {
+	    
                System.out.println("You were defeated by the " + monster + ".");
+	       
                return;
             }
          } else if (choice == 2) {
@@ -49,6 +81,11 @@ public class Adventure_Game {
    }
 }
 
+
+
+
+
+
 /* -- The use of System.out.println for each output, rather than using formatted strings
 The use of a switch statement for the user's choice
 Magic numbers (such as 11 + r.nextInt(10))
@@ -57,19 +94,27 @@ Lack of meaningful variable names
 Inefficient use of if statements */ --
 
 
+
 //Refactored Style: own version
 
 package Adventure_Game;
 
 import java.util.Random;
+
 import java.util.Scanner;
 
 public class AdventureGame {
+
     private static final String[] ITEMS = {"sword", "shield", "health potion"};
+    
     private static final String[] MONSTERS = {"orc", "goblin", "dragon"};
+    
     private static final int MAX_HEALTH = 20;
+    
     private static final Scanner SCANNER = new Scanner(System.in);
+    
     private static final Random RANDOM = new Random();
+    
 
     public static void main(String[] args) {
         int playerHealth = MAX_HEALTH;
