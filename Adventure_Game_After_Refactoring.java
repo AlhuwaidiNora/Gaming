@@ -41,5 +41,5 @@ public class Adventure_Game_After_Refactoring {
                     break;
                 case 3:
                     System.out.printf("You fled from the %s.\n", monster);
-                    return;}}}
+                    return;}}}}
 
