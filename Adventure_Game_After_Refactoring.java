@@ -1,12 +1,15 @@
 package Adventure_Game;
+
 import java.util.Random;
 import java.util.Scanner;
+
 public class Adventure_Game_After_Refactoring {
     private static final String[] ITEMS = {"sword", "shield", "health potion"};
     private static final String[] MONSTERS = {"orc", "goblin", "dragon"};
     private static final int MAX_HEALTH = 20;
     private static final Scanner SCANNER = new Scanner(System.in);
     private static final Random RANDOM = new Random();
+    
     public static void main(String[] args) {
         int playerHealth = MAX_HEALTH;
         while (true) {
@@ -21,13 +24,15 @@ public class Adventure_Game_After_Refactoring {
                     monsterHealth -= damage;
                     if (monsterHealth <= 0) {
                         System.out.printf("You defeated the %s!", monster);
-                        return; }
+                        return;
+                    }
                     damage = RANDOM.nextInt(6) + 1;
                     System.out.printf("The %s attacks you for %d damage!\n", monster, damage);
                     playerHealth -= damage;
                     if (playerHealth <= 0) {
                         System.out.printf("You were defeated by the %s.\n", monster);
-                        return;       }
+                        return;
+                    }
                     break;
                 case 2:
                     System.out.printf("Which item would you like to use?\n1. sword\n2. shield\n3. health potion\nEnter your choice: ");
@@ -37,3 +42,4 @@ public class Adventure_Game_After_Refactoring {
                 case 3:
                     System.out.printf("You fled from the %s.\n", monster);
                     return;}}}
+
