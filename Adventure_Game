@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Adventure_Game_After_Refactoring {
- private static final String[] ITEMS = {"sword", "shield", "health potion"};
+ private static final String[] ITEMS = {"sword", "shield", "health potion"}; 
  private static final String[] MONSTERS = {"orc", "goblin", "dragon"};
  private static final int MAX_HEALTH = 20;
  private static final Scanner SCANNER = new Scanner(System.in);
