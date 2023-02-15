@@ -9,7 +9,7 @@ public class Adventure_Game_After_Refactoring {
  private static final Scanner SCANNER = new Scanner(System.in);
  private static final Random RANDOM = new Random();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
      int playerHealth = MAX_HEALTH;
 
        
