@@ -7,6 +7,7 @@ This is a simple command-line text-based adventure game implemented in Java. In 
 To play the game, you need to have Java installed on your computer. You can download the latest version of Java from the official website: https://www.java.com/en/download/.
 
 Once you have installed Java, you can clone or download the game repository from GitHub. Open a terminal window and navigate to the root directory of the game. Then, run the following command to compile and run the game:
+
 javac Adventure_Game.java
 
 java Adventure_Game
