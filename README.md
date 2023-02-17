@@ -8,6 +8,7 @@ To play the game, you need to have Java installed on your computer. You can down
 
 Once you have installed Java, you can clone or download the game repository from GitHub. Open a terminal window and navigate to the root directory of the game. Then, run the following command to compile and run the game:
 javac Adventure_Game.java
+
 java Adventure_Game
 
 # How to Play
