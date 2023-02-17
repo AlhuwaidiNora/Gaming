@@ -1,5 +1,4 @@
-impackage Adventure_Game;
-
+package Adventure_Game;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,7 +16,7 @@ public class Adventure_Game_After_Refactoring {
             String monster = MONSTERS[RANDOM.nextInt(3)];
             System.out.printf("A %s appeared! Your turn! You have %d health. The %s has %d health. What would you like to do?\n1. Attack\n2. Use item\n3. Flee\nEnter your choice: ", monster, playerHealth, monster, monsterHealth);
             int choice = Integer.parseInt(SCANNER.nextLine());
-            switch (choice) {
+            switch (choice) { 
                 case 1:
                     int damage = RANDOM.nextInt(6) + 1;
                     System.out.printf("You attack the %s for %d damage!\n", monster, damage);
