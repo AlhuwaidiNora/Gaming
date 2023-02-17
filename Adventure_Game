@@ -48,3 +48,4 @@ public class Adventure_Game_After_Refactoring {
         System.out.printf("You used the %s.", ITEMS[itemChoice - 1]); }
     private static void flee(String monster) {
         System.out.printf("You fled from the %s.\n", monster); }} 
+        
